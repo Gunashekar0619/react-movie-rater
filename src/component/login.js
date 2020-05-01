@@ -38,6 +38,7 @@ class Login extends Component {
                 }
             )
         } else {
+            console.log("simple change");
             fetch(`${process.env.REACT_APP_URL}/api/user/`,{
                 method: 'POST',
                 headers: {'content-type':'application/json'},
